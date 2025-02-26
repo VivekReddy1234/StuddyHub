@@ -1,0 +1,28 @@
+
+
+
+#imgStore
+{ background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+.buy
+{
+  padding: 3px;
+}
+
+#object:hover
+{
+
+  box-shadow: inset 1px 1px 10px white;  
+  
+}
+
+#buy-box
+{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}

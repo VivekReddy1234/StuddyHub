@@ -1,0 +1,39 @@
+#store-body
+{
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+
+}
+
+#sales
+{
+  margin-left: 20px;
+}
+h1{
+  padding-left: 10px;
+}
+
+.sale
+{
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sale-box
+{
+  padding-top: 10px;
+  
+  margin-left: 10px;
+  color: white;
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px 240px ;
+  
+}
+.object{
+  border: 1px solid white;
+  margin-right: 10px;
+  height: 200px;
+  width: 180px;
+}

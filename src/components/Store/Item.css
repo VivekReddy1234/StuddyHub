@@ -1,0 +1,21 @@
+#left-item
+{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+#item-container
+{
+  padding-left: 100px;
+  padding-top: 120px;
+}
+#item
+{
+  background-color: black;
+  width: 400px;
+  height: 500px;
+}
+#item-detail
+{
+  font-size: large;
+}
