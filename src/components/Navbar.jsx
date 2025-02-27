@@ -4,6 +4,7 @@ import { auth } from '../firebase/Context';
 import { onAuthStateChanged } from 'firebase/auth';
 import { FireBaseContext } from '../firebase/Context';
 import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
   const { SignOut } = useContext(FireBaseContext);
@@ -46,15 +47,21 @@ const Navbar = (props) => {
         <li id='about'><a href="/about">About Us</a></li>
         <li id='store'><a href="/store">Store</a></li>
         <li id='mentor'><a href="/mentor">Mentor</a></li>
+        
+     
+         <div className=' ml-[120px]'> <Link to='/Cart' >Cart </Link>
+      </div>
+        
         {user ? (
-          <button id='LogOut' onClick={signOutUser} style={{ marginLeft: '200px' }}>Log Out</button>
+          <button id='LogOut' onClick={signOutUser} style={{ marginLeft: '10px' }}>Log Out</button>
         ) :
             
-    
+        (  
         
-        (<a href="/sign">
-              <button id='login' style={{ marginLeft: '200px' }}>Register</button>
-            </a>)
+          <a href="/sign">
+              <button id='login' style={{ marginLeft: '10px' }}>Register</button>
+            </a>
+            )
             
           
         }

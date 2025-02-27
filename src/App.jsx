@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sign from './components/Sign'
 import Courses from './components/Courses'
 import './App.css'
@@ -15,11 +15,21 @@ import Item from './components/Store/Item'
 import SignIn from './components/SignIn'
 import PdfUploader from './components/Pdf/Uploader'
 import Chatbot from './components/chatbot/Chatbot'
+import ProductAdder from './components/Store/ProductAdd'
+import {Provider} from './components/Store/context-api/Cart.jsx'
 
 const App = () => {
+
+  const [cart,changeCart]=  useState([]);
+  const setCart=(item)=>{
+   changeCart(item);
+  }
+  const addtoCart=(item)=>{
+     setCart((prev)=>[...prev,item]);
+  }
   return (
    <>
-
+     <Provider value={{cart,setCart,addtoCart}}>
          <Routes>
           <Route path='/forum' element={<Forum/>}/>
 
@@ -41,9 +51,12 @@ const App = () => {
 <Route path='/Cart' element={<Cart/>}></Route>
 <Route path='/bot' element={<Chatbot/>} ></Route>
 <Route path='/upload' element={<PdfUploader/>}></Route>
+
           </Routes> 
 {/*      
   <Slides></Slides> */}
+
+  </Provider>
   
       </>
   )
