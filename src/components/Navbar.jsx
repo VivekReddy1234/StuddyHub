@@ -42,6 +42,7 @@ const Navbar = (props) => {
       <ul>
         <li id='courses'><a href="/courses">Courses</a></li>
         <li id='past'><a href="/Dashboard">Dashboard</a></li>
+        <li id='forum'><a href="/forum">Forum</a></li>
         <li id='about'><a href="/about">About Us</a></li>
         <li id='store'><a href="/store">Store</a></li>
         <li id='mentor'><a href="/mentor">Mentor</a></li>
