@@ -1,0 +1,120 @@
+
+ul{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  height: 100px;
+  justify-content: left;
+  align-items: center;
+ color: white;
+}
+
+#logoNav
+{
+  border-radius: 100%;
+  height: 60px;
+  margin-left: 200px;
+  margin-right: 100px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 8px 2px white;
+}
+#LogOut
+{
+  padding: 10px;
+  border: 1px solid white;
+  outline: 1px solid black;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 20px;
+}
+.nav{
+  background-color: black;
+  box-shadow:inset  2px 0px 10px white; 
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+button a{
+  color: black;
+}
+
+li:hover{
+  cursor: pointer;
+  font-weight: 800;
+  border:1px solid rgba(0, 255, 81, 0.3); ;
+
+  box-shadow: 5px 5px 10px rgb(16, 255, 16);
+}
+
+
+.nav
+{
+font-size: larger;
+display: flex;
+font-weight: 500;
+gap: 60px;
+font-weight: 500;
+/* box-shadow: 1px 15px 10px rgba(13, 0, 255, 0.5); */
+overflow-x:hidden;
+}
+
+#login
+{  cursor: pointer;
+  border: none;
+  border-radius:25px ;
+  padding: 10px 40px;
+  font-size: large;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+#courses.hover{
+  font-weight: 800;
+  border:.1px solid rgba(255, 55, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(255, 55, 0, 0.8);
+}
+
+#past.hover{
+  font-weight: 800;
+  border:0.1px solid rgba(225, 255, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(225, 255, 0, 0.8);
+}
+
+
+
+#about.hover{
+  font-weight: 800;
+  border:.1px solid  rgba(0, 229, 255, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 174, 255, 0.9);
+}
+
+
+
+#login.hover
+{
+  color: white;
+  background-color: black;
+  font-weight: 800;
+  border:.3px solid rgba(255, 0, 132, 0.3);
+  box-shadow: 5px 5px 10px rgba(255, 0, 132, 0.8);
+}
+
+
+#store.hover
+{
+  font-weight: 800;
+  border:.1px solid  rgba(0, 229, 255, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 174, 255, 0.9);
+}
+
+#login.hover
+{
+  color: white;
+  background-color: black;
+  font-weight: 800;
+  border:.3px solid rgba(255, 0, 132, 0.3);
+  box-shadow: 5px 5px 10px rgba(255, 0, 132, 0.8);
+}
