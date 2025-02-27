@@ -30,6 +30,8 @@ const About = () => {
  
    <Navbar active='about'/>
   
+
+
    <div id="homebody">
     <div id="about">
       <video src={vid}  controls></video>
