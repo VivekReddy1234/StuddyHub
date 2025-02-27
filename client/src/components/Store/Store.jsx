@@ -3,8 +3,8 @@ import Navbar from "../Navbar";
 import Object from "./Object";
 import ProductCard from "./ProductAdd";
 import LoadingSpinner from "../Loading";
-import { Context } from "./context-api/Cart";
-import { BuyContext } from "./context-api/Buy";
+// import { Context } from "./context-api/Cart";
+// import { BuyContext } from "./context-api/Buy";
 import { auth } from "../../firebase/Context";
 
 // Importing Assets
@@ -33,8 +33,8 @@ import stat4 from "../../assets/stat/stat4.jpg";
 import stat5 from "../../assets/stat/stat5.webp";
 
 const Store = () => {
-  const { addtoCart } = useContext(Context);
-  const { fxn } = useContext(BuyContext);
+  // const { addtoCart } = useContext(Context);
+  // const { fxn } = useContext(BuyContext);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 

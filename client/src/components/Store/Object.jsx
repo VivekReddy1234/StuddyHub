@@ -1,14 +1,17 @@
-import React, { useContext } from 'react';
-import { Context } from './context-api/Cart';
-import { BuyContext } from './context-api/Buy';
+import React from 'react';
+// import { Context } from './context-api/Cart';
+// import { BuyContext } from './context-api/Buy';
+import { useCartContext } from './context-api/Cart';
 
 const Object = (props) => {
-  const { addtoCart } = useContext(Context);
-  const { fxn } = useContext(BuyContext);
+  const { addtoCart,cart } = useCartContext();
+  // const { fxn } = useContext(BuyContext);
 
   const handleAddToCart = () => {
     const item = { url: props.url, price: props.price, name: props.name };
     addtoCart(item);
+    console.log(cart);
+  
   };
 
   return (
