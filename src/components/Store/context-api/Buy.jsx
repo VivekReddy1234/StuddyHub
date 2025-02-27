@@ -1,31 +1,29 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React from 'react';
 
-export const BuyContext = createContext(null);
+    function Buy({ cart }) {
+      const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-export const BuyProvider = (props) => {
-  const [prevImg, setImg] = useState('');
-  const [prevPrice, setPrice] = useState(0);
-  const [prevName, setName] = useState('');
-
-  const [shouldNavigate, setShouldNavigate] = useState(false);
-
-  const fxn = (item) => {
-    setImg(item.url);
-    setName(item.name);
-    setPrice(item.price);
-    setShouldNavigate(true);
-  };
-
-  useEffect(() => {
-    if (shouldNavigate) {
-      setShouldNavigate(false);
-      window.location.href = '/item';
+      return (
+        <div className="buy-page">
+          <h2>Checkout</h2>
+          {cart.length === 0 ? (
+            <p>Your cart is empty.</p>
+          ) : (
+            <>
+              <p>Items in your cart:</p>
+              <ul>
+                {cart.map(item => (
+                  <li key={item.id}>
+                    {item.name} x {item.quantity} - ${item.price * item.quantity}
+                  </li>
+                ))}
+              </ul>
+              <p>Total: ${totalPrice.toFixed(2)}</p>
+              <button>Confirm Purchase</button>
+            </>
+          )}
+        </div>
+      );
     }
-  }, [prevImg, prevPrice, prevName, shouldNavigate]);
 
-  return (
-    <BuyContext.Provider value={{ fxn, prevImg, prevName, prevPrice }}>
-      {props.children}
-    </BuyContext.Provider>
-  );
-};
+    export default Buy;

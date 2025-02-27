@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { BuyContext } from './context-api/Buy';
+// import { BuyContext } from './context-api/Buy';
 
 const Item = () => {
-  const { prevImg, prevPrice, prevName } = useContext(BuyContext);
+  // const { prevImg, prevPrice, prevName } = useContext(BuyContext);
 
   return (
     <div className="flex flex-col md:flex-row items-start p-10">
