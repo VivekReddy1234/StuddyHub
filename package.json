@@ -12,12 +12,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.8.1",
+    "date-fns": "^4.1.0",
     "firebase": "^10.12.2",
+    "lucide-react": "^0.476.0",
     "nanoid": "^5.0.7",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-animated-slider": "^1.1.4",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

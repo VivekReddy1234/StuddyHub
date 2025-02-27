@@ -2,9 +2,11 @@ import React from 'react'
 import Sign from './components/Sign'
 import Courses from './components/Courses'
 import './App.css'
+import Forum from './pages/Forum'
 import Cart from './components/Store/Cart'
 import About from './components/About'
 import Detail from './components/Detail.module'
+import Chat from './components/ChatRoom/Chat'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Slides from './Slider'
 import Video from './components/Video'
@@ -17,8 +19,11 @@ const App = () => {
    <>
 
          <Routes>
+          <Route path='/forum' element={<Forum/>}/>
+
          <Route path='/' element={<About/>}/>
 <Route path='/IIT' element={<Video  prop={"IIT.mp4"}/>}/>
+<Route path='/chat' element={<Chat/>}/>
 <Route path='/C++' element={<Video  prop={"C++.mp4"}/>}/>
 <Route path='/JAVA' element={<Video  prop={"JAVA.mp4"}/>}/>
 <Route path='/detail/IIT' element={<Detail data={"IIT"}/>}></Route>
