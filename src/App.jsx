@@ -25,7 +25,8 @@ const App = () => {
 
          <Route path='/' element={<About/>}/>
 <Route path='/IIT' element={<Video  prop={"IIT.mp4"}/>}/>
-<Route path='/chat' element={<Chat/>}/>
+<Route path='/mentor' element={<Chat/>}/>
+
 <Route path='/C++' element={<Video  prop={"C++.mp4"}/>}/>
 <Route path='/JAVA' element={<Video  prop={"JAVA.mp4"}/>}/>
 <Route path='/detail/IIT' element={<Detail data={"IIT"}/>}></Route>
